@@ -1,8 +1,10 @@
 ![Seaport](img/Seaport-banner.png)
 
-# Seaport
+# Seaport-DS-Project
 
-Seaport is a new marketplace protocol for safely and efficiently buying and selling NFTs.
+Seaport is a new marketplace protocol for safely and efficiently buying and selling NFTs. 
+
+This forked version will implement an integration with scripts for data science to analyse the risk coefficient for the given community NFT project/ other digital asset. 
 
 ## Table of Contents
 
@@ -19,7 +21,20 @@ Seaport is a new marketplace protocol for safely and efficiently buying and sell
 
 Seaport is a marketplace protocol for safely and efficiently buying and selling NFTs. Each listing contains an arbitrary number of items that the offerer is willing to give (the "offer") along with an arbitrary number of items that must be received along with their respective receivers (the "consideration").
 
-See the [documentation](docs/SeaportDocumentation.md), the [interface](contracts/interfaces/SeaportInterface.sol), and the full [interface documentation](https://docs.opensea.io/v2.0/reference/seaport-overview) for more information on Seaport.
+On the side of the Risk management part, we have the following potential ideas: 
+
+
+1. we aggregrate  the information from the  different NFT types and creating the risk management profiles (using lens).
+
+2. training the models on the present datasets using tf.js / huggingface models on the traits stored offchain (this can be FL/IPFS standards).
+
+See the:
+1. [documentation](docs/SeaportDocumentation.md)
+2.  [interface of seaport onchain info](contracts/interfaces/SeaportInterface.sol), 
+3.  [overall description of the seaport interface](https://docs.opensea.io/v2.0/reference/seaport-overview) for more information on Seaport.
+4. [WIP: explaining about risk management](./docs/).
+
+
 
 ## Deployments
 

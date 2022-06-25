@@ -10,6 +10,10 @@ import { ConduitInterface } from "../interfaces/ConduitInterface.sol";
 
 import { Conduit } from "./Conduit.sol";
 
+
+// lens profile  interface for fetching the holder profile information.
+//import {} from "@aave/lens-protocol/contracts/misc/ProxyCreationProfile.sol";
+
 /**
  * @title ConduitController
  * @author 0age

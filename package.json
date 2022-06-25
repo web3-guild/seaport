@@ -12,7 +12,9 @@
   "dependencies": {
     "ethers": "^5.5.3",
     "ethers-eip712": "^0.2.0",
-    "hardhat": "https://github.com/0age/hardhat/releases/download/viaIR-2.9.3/hardhat-v2.9.3.tgz"
+    "hardhat": "https://github.com/0age/hardhat/releases/download/viaIR-2.9.3/hardhat-v2.9.3.tgz",
+    "surya": "^0.4.6",
+    "@aave/lens-protocol": "github:aave/lens-protocol"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.4",
@@ -67,7 +69,8 @@
     "lint:fix": "prettier --write **.sol && prettier --write **.js && prettier --write **.ts",
     "test:forge": "FOUNDRY_PROFILE=reference forge build; FOUNDRY_PROFILE=optimized forge build; FOUNDRY_PROFILE=test forge test -vvv",
     "test:lite": "FOUNDRY_PROFILE=reference forge build; FOUNDRY_PROFILE=lite forge test -vvv",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate-types": "typechain --target=ethers-v5  './artifacts/contracts/**/*.json'"
   },
   "lint-staged": {
     "*.sol": "prettier --write",
